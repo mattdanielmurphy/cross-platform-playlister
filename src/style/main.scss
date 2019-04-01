@@ -1,0 +1,23 @@
+body {
+	background: #222;
+	color: white;
+	font-family: 'Avenir Next';
+	padding: 3em;
+}
+
+.song {
+	cursor: pointer;
+	&:hover {
+		background: rgba(255, 255, 255, .1);
+	}
+}
+
+.selected {
+	color: rgb(12, 150, 242);
+}
+
+#authed-section,
+#pre-auth-section,
+#player {
+	display: none;
+}

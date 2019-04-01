@@ -9,7 +9,20 @@
 </head>
 
 <body>
-  <iframe src="https://giphy.com/embed/spbdxMaLCCMik" width="480" height="419" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <div class="container main">
+    <div id="pre-auth-section">
+      <h1>Not Authenticated</h1>
+      <p>You must provide access to a folder in your dropbox to use this app. Click the link below to authenticate.</p>
+      <a href="" id="authlink" class="button">Authenticate</a>
+      <p class="info">Once authenticated, it will use the access token to list the files in your root directory.</p>
+    </div>
+
+    <div id="authed-section">
+      <div id="player"><audio controls autoplay id="player"></audio></div>
+      <table id="songs"></table>
+      <form id='create-playlist'><button>Create playlist of selected songs</button></form>
+    </div>
+  </div>
 </body>
 
 </html>
